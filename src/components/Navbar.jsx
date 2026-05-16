@@ -93,11 +93,10 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-white/80 dark:bg-[#0A0A0B]/80 backdrop-blur-xl border-b border-gray-200 dark:border-white/10 shadow-sm"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+          ? "bg-white/80 dark:bg-[#0A0A0B]/80 backdrop-blur-xl border-b border-gray-200 dark:border-white/10 shadow-sm"
+          : "bg-transparent"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
@@ -153,19 +152,16 @@ export default function Navbar() {
                 className="lg:hidden w-10 h-10 rounded-lg bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 flex flex-col items-center justify-center gap-1.5 cursor-pointer"
               >
                 <span
-                  className={`w-5 h-0.5 bg-gray-700 dark:bg-white rounded-full transition-all duration-300 ${
-                    mobileOpen ? "rotate-45 translate-y-[4px]" : ""
-                  }`}
+                  className={`w-5 h-0.5 bg-gray-700 dark:bg-white rounded-full transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[4px]" : ""
+                    }`}
                 />
                 <span
-                  className={`w-5 h-0.5 bg-gray-700 dark:bg-white rounded-full transition-all duration-300 ${
-                    mobileOpen ? "opacity-0" : ""
-                  }`}
+                  className={`w-5 h-0.5 bg-gray-700 dark:bg-white rounded-full transition-all duration-300 ${mobileOpen ? "opacity-0" : ""
+                    }`}
                 />
                 <span
-                  className={`w-5 h-0.5 bg-gray-700 dark:bg-white rounded-full transition-all duration-300 ${
-                    mobileOpen ? "-rotate-45 -translate-y-[4px]" : ""
-                  }`}
+                  className={`w-5 h-0.5 bg-gray-700 dark:bg-white rounded-full transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-[4px]" : ""
+                    }`}
                 />
               </button>
             </div>

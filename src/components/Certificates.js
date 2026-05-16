@@ -8,19 +8,19 @@ import { useState } from "react";
 const certificates = [
   {
     id: 1,
-    title: "Google Ads Search Certification",
-    issuer: "Google",
-    date: "2024",
-    credentialUrl: "#",
+    title: "Full stack web development",
+    issuer: "Udemy",
+    date: "2025",
+    credentialUrl: "https://www.udemy.com/certificate/UC-1f0cf417-cf80-4840-b9a0-6022c71b5f1f/",
     color: "from-blue-500/10 to-green-500/10",
     borderColor: "hover:border-blue-500/50",
   },
   {
     id: 2,
-    title: "Google Ads Display Certification",
-    issuer: "Google",
-    date: "2024",
-    credentialUrl: "#",
+    title: "Performance Marketing",
+    issuer: "Tute dude",
+    date: "2026",
+    credentialUrl: "https://upskill.tutedude.com/certificate/TD-J.MD-PM-0811",
     color: "from-yellow-500/10 to-red-500/10",
     borderColor: "hover:border-yellow-500/50",
   },
@@ -28,37 +28,19 @@ const certificates = [
     id: 3,
     title: "Google Analytics Certification",
     issuer: "Google",
-    date: "2024",
-    credentialUrl: "#",
+    date: "2026",
+    credentialUrl: "https://skillshop.credential.net/c4170a7e-feba-4487-aa93-792f52118202",
     color: "from-orange-500/10 to-yellow-500/10",
     borderColor: "hover:border-orange-500/50",
   },
   {
     id: 4,
-    title: "Meta Certified Digital Marketing Associate",
-    issuer: "Meta",
-    date: "2024",
-    credentialUrl: "#",
-    color: "from-blue-600/10 to-blue-400/10",
-    borderColor: "hover:border-blue-600/50",
-  },
-  {
-    id: 5,
-    title: "HubSpot Inbound Marketing Certification",
+    title: "HubSpot Digital Marketing Certification",
     issuer: "HubSpot",
-    date: "2024",
-    credentialUrl: "#",
+    date: "2026",
+    credentialUrl: "https://app-na2.hubspot.com/academy/achievements/4g77fxf7/en/1/mohamed-ismail-j/digital-marketing-certified",
     color: "from-orange-500/10 to-red-400/10",
     borderColor: "hover:border-orange-500/50",
-  },
-  {
-    id: 6,
-    title: "SEMrush SEO Toolkit Course",
-    issuer: "SEMrush Academy",
-    date: "2023",
-    credentialUrl: "#",
-    color: "from-orange-600/10 to-orange-300/10",
-    borderColor: "hover:border-orange-600/50",
   },
 ];
 
@@ -117,29 +99,30 @@ export default function Certificates() {
                 </span>
               </p>
 
-              <a
-                href={cert.credentialUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#6C63FF] hover:text-[#5a52e0] transition-colors"
-              >
-                View Credential
-                <svg
-                  className={`w-4 h-4 transition-transform duration-300 ${
-                    hoveredId === cert.id ? "translate-x-1" : ""
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <a
+                  href={cert.credentialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#6C63FF] hover:text-[#5a52e0] transition-colors"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
+                  View Credential
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-300 ${hoveredId === cert.id ? "translate-x-1" : ""
+                      }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         ))}

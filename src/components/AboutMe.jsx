@@ -23,7 +23,7 @@ export default function AboutMe() {
           {/* Profile Image */}
           <div className="w-full h-80 bg-gray-100 dark:bg-[#0A0A0B] rounded-2xl border border-gray-200 dark:border-white/10 flex items-center justify-center relative overflow-hidden group">
             <Image
-              src="/profile.jpg"
+              src="/assets/profile.webp"
               alt="Mohamed Ismail"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

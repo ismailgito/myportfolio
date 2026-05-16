@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import PageProgressBar from "@/components/ui/PageProgressBar";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -70,16 +70,23 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html
       lang="en"
       className={`${inter.variable} ${poppins.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <GoogleTagManager gtmId="GTM-KBCQ4L7X" />
+      <head>
+        <GoogleTagManager />
+      </head>
+
       <body
         className={`${inter.className} antialiased bg-[#F8F9FA] dark:bg-[#0A0A0B] text-gray-900 dark:text-gray-100 overflow-x-hidden`}
       >
+        {/* Google Tag Manager - Noscript */}
+        <GoogleTagManagerNoScript />
+
         <ThemeProvider>
           <PageProgressBar />
 
