@@ -77,10 +77,10 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <a
-            href="#ai-tools"
+            href="#Resume"
             className="w-full sm:w-auto px-8 py-4 bg-[#6C63FF] hover:bg-[#5a52e0] text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-[#6C63FF]/30"
           >
-            View My AI Arsenal
+            Download Resume
           </a>
           <a
             href="#contact"
