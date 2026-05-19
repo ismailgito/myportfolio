@@ -85,7 +85,7 @@ export default function Footer() {
 
                   {/* LinkedIn */}
                   <a
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://www.linkedin.com/in/mohamed-ismail-2700a2257/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-3 bg-white dark:bg-[#1A1A2E] rounded-xl border border-gray-200 dark:border-white/10 hover:border-[#6C63FF] hover:shadow-md transition-all group"
@@ -95,7 +95,7 @@ export default function Footer() {
                     </div>
                     <div className="flex-1">
                       <h4 className="font-semibold text-gray-900 dark:text-white">LinkedIn</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">linkedin.com/in/yourusername</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400">linkedin.com/in/mohamed-ismail-2700a2257</p>
                     </div>
                     <FaExternalLinkAlt size={12} className="text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
