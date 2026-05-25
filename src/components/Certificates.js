@@ -42,6 +42,15 @@ const certificates = [
     color: "from-orange-500/10 to-red-400/10",
     borderColor: "hover:border-orange-500/50",
   },
+  {
+    id: 5,
+    title: "AI-powered Marketing Certification",
+    issuer: "SEMRush Academy",
+    date: "2026",
+    credentialUrl: "https://static.semrush.com/academy/certificates/635c14d1af/mohamed-ismail-j_26.pdf",
+    color: "from-blue-500/10 to-indigo-500/10",
+    borderColor: "hover:border-blue-500/50",
+  }
 ];
 
 export default function Certificates() {
