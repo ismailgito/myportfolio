@@ -50,6 +50,15 @@ const certificates = [
     credentialUrl: "https://static.semrush.com/academy/certificates/635c14d1af/mohamed-ismail-j_26.pdf",
     color: "from-blue-500/10 to-indigo-500/10",
     borderColor: "hover:border-blue-500/50",
+  },
+  {
+    id: 6,
+    title: "Conversion Optimization Certification",
+    issuer: "Google",
+    date: "2026",
+    credentialUrl: "https://skillshop.credential.net/3f7ce6b6-3e5d-4a4b-83d6-d0443254b8c9#acc.n2qSTAul",
+    color: "from-green-500/10 to-teal-500/10",
+    borderColor: "hover:border-green-500/50",
   }
 ];
 
