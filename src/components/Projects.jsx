@@ -31,6 +31,18 @@ export default function Projects() {
                 { type: "ppt", label: "PowerPoint Presentation", icon: FaFilePowerpoint, color: "text-red-500", file: "/projects/multi-channel-attribution-tracker/The_Growth_Prism.pptx" }
             ]
         },
+        {
+            id: 3,
+            title: "Claude Token Optmization",
+            subtitle: "Stop burning tokens, start optimizing",
+            description: "Token Optimizer is a browser-based application designed to transform a wide variety of file formats into clean, LLM-ready markdown. By removing unnecessary metadata and binary bloat, the tool can achieve a size reduction of over 90%, which helps users save on API costs and stay within context limits.",
+            liveUrl: "https://claude-token-optimization.vercel.app/",
+            githubUrl: "https://github.com/ismailgito/Claude-Token-optimization.git",
+            downloadOptions: [
+                { type: "pdf", label: "PDF", icon: FaFilePdf, color: "text-blue-500", file: "/projects/Claude-Token-optimization/Claude-Token-Optimization.pdf" },
+                { type: "ppt", label: "PowerPoint Presentation", icon: FaFilePowerpoint, color: "text-red-500", file: "/projects/Claude-Token-optimization/Claude-Token-Optimization.pptx" }
+            ]
+        },
     ];
 
     const toggleDownload = (id) => {
