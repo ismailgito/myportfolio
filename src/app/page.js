@@ -7,7 +7,6 @@ import MarketingCasestudies from "@/components/MarketingCasestudies";
 import Projects from "@/components/Projects";
 import Internships from "@/components/Internships";
 import Certificates from "@/components/Certificates";
-import Testimonials from "@/components/Testimonials";
 import Resume from "@/components/Resume";
 import ContactForm from "@/components/ContactForm";
 
@@ -35,10 +34,7 @@ export default function Home() {
 
       {/* 7. ABOUT */}
       <AboutMe />
-
-      {/* 8. TESTIMONIALS */}
-      <Testimonials />
-
+      
       {/* 9. RESUME CTA */}
       <Resume />
 

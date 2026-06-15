@@ -12,7 +12,7 @@
   --color-surface-light: #222222;
   --color-apptext: #F2F2F0;
   --color-cta: #FF4D2E;
-  --color-muted: #444444;
+  --color-muted: #F2F2F0;
 
   /* Font mappings */
   --font-headline: var(--font-syne), sans-serif;
