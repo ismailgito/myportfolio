@@ -1,84 +1,158 @@
 # Mohamed Ismail | Personal Portfolio
 
-A modern, high-performance personal portfolio website built with **Next.js**, **Tailwind CSS**, and **Framer Motion**. It serves as a digital resume and project showcase for my work as a Junior Performance Marketer.
+A premium, high-performance, single-page personal portfolio website built for **Mohamed Ismail**, a **Junior Performance Marketer**. This project showcases his experience, expertise, certifications, and portfolio projects using modern web tools: **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS v4**, and **Framer Motion**.
 
-## 🚀 Built With
+---
 
-- **[Next.js](https://nextjs.org/)** (v16) - React framework
-- **[React](https://react.dev/)** (v19) - JavaScript library for user interfaces
-- **[Tailwind CSS](https://tailwindcss.com/)** (v4) - Utility-first CSS framework
-- **[Framer Motion](https://www.framer.com/motion/)** - Animation library for React
-- **Nodemailer** - For the Contact Form API processing
-- **@next/third-parties** - Google Tag Manager integration
+## 🚀 Key Features
 
-## 🌟 Features
+- **Single-Page Navigation**: Smooth, anchor-link navigation across sections (Hero, About, Skills, Certifications, Experience, Projects, Contact).
+- **Responsive Modern Design**: Mobile-first design tailored with premium styling, customized color themes, and subtle micro-animations.
+- **Dark/Light Mode Toggle**: Seamless theme support powered by React Context (`ThemeContext`) with local storage state persistence.
+- **Dynamic Animations**: Handcrafted transitions and hover states built using Framer Motion.
+- **Performance Marketing Showcases**: Custom sections outlining landing page optimizations, multi-channel attribution tracking models, and Claude token optimization.
+- **Certifications Gallery**: An interactive courses and certifications block showcasing credentials from Google, HubSpot, Udemy, SEMrush, and Tute Dude.
+- **Web3Forms Integration**: Fully functional contact form with real-time status feedback utilizing the Web3Forms serverless API.
+- **GTM (Google Tag Manager) Integration**: Integrated analytics and event tracking code snippet support.
+- **SEO & Security Optimized**: App router metadata (OpenGraph/Twitter cards), viewport configurations, and custom security headers (X-Frame-Options, X-Content-Type-Options, Referrer-Policy).
 
-- **Responsive Design**: Fully responsive layout tailored for mobile, tablet, and desktop devices.
-- **Dark/Light Mode**: Seamless user-toggled theme support using React Context (`ThemeProvider`).
-- **Smooth Animations**: Engaging page transitions and scroll-triggered animations via Framer Motion.
-- **SEO & Performance Optimized**: Utilizes Next.js App Router metadata, achieving excellent Lighthouse performance scores.
-- **Integrated Analytics**: Connected with Google Analytics and Microsoft Clarity through Google Tag Manager.
-- **Active Contact Form**: Full-stack contact form utilizing Next.js API routes and Nodemailer.
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Category | Purpose |
+| :--- | :--- | :--- |
+| **Next.js 16** | Framework | React application framework (App Router) |
+| **React 19** | Library | JavaScript library for building UI |
+| **Tailwind CSS v4** | CSS | Utility-first styling with Modern CSS features |
+| **Framer Motion** | Animation | Fluid UI and entry transitions |
+| **Web3Forms** | Contact Form | Serverless email delivery integration |
+| **React Icons** | Icons | SVG icons (Font Awesome) |
+| **Google Tag Manager** | Analytics | Integration of tracking pixels and metrics |
+
+---
 
 ## 📂 Project Structure
 
 ```text
-src/
-├── app/                  # Next.js app router (pages & API routes)
-│   ├── about/            # About Me page
-│   ├── api/              # API routes (e.g., mailer)
-│   ├── blog/             # Read my latest articles
-│   ├── contact/          # Contact form page
-│   ├── projects/         # Projects & case studies
-│   └── layout.js         # Root layout with providers & metadata
-├── components/           # Reusable React components (Navbar, Footer, ui/, etc.)
-├── context/              # React Context (ThemeProvider)
-└── lib/                  # Utility functions and configurations
-public/                   # Static assets (images, icons, etc.)
+myportfolio/
+├── public/                     # Static assets
+│   ├── assets/                 # Profile and other static imagery
+│   ├── certificates/           # Certification files
+│   ├── projects/               # Project PDF & PPT downloads
+│   ├── Mohamed_Ismail_Resume.pdf  # Downloadable resume
+│   └── Internship.pdf          # Internship certificate
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── globals.css         # Global styling and Tailwind directives
+│   │   ├── layout.js           # Root layout with GTM, theme provider, structure
+│   │   ├── loading.js          # Next.js loader skeleton UI
+│   │   ├── not-found.js        # Custom 404 page
+│   │   └── page.js             # Main Single Page App (aggregates sections)
+│   ├── components/             # Reusable UI sections
+│   │   ├── ui/                 # Small atomic components
+│   │   │   ├── AnimatedCounter.jsx
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── PageProgressBar.jsx
+│   │   │   ├── ScrollToTop.jsx
+│   │   │   └── SectionHeading.jsx
+│   │   ├── AboutMe.jsx         # Personal introduction summary
+│   │   ├── Certificates.js     # Grid displaying certified credentials
+│   │   ├── ContactForm.jsx     # Web3Forms custom form layout
+│   │   ├── Footer.jsx          # Bottom copyright & connect info
+│   │   ├── GoogleTagManager.jsx # Script injecting utility
+│   │   ├── Hero.jsx            # Landing header with CTA
+│   │   ├── Internships.jsx     # Details on past professional roles
+│   │   ├── MarketingCasestudies.jsx # Performance metrics & insights
+│   │   ├── Navbar.jsx          # Dynamic header with theme & menu toggles
+│   │   ├── PerformanceShowcases.jsx # Performance metrics display components
+│   │   ├── Projects.jsx        # Project showcases & file downloads
+│   │   ├── Resume.jsx          # Resume section prompting download
+│   │   └── Skills.jsx          # Interactive list of tools
+│   ├── context/
+│   │   └── ThemeContext.jsx    # React Context state for Light/Dark Mode
+│   └── lib/
+│       └── api.js              # API interface utilities
+├── next.config.mjs             # Next.js config (headers, image patterns, rewrites)
+├── package.json                # Dependencies and npm scripts
+└── postcss.config.mjs          # PostCSS configuration
 ```
 
-## 🛠️ Getting Started
+---
+
+## 💻 Getting Started
 
 ### Prerequisites
-- Node.js 18.x or later
-- npm, yarn, pnpm, or bun
 
-### Installation
+Make sure you have Node.js 18.x or later installed on your system.
 
-1. **Clone the repository (or navigate to the directory):**
+### 1. Clone & Install Dependencies
+
+Clone this repository to your local machine and install packages:
+
 ```bash
-git clone https://github.com/your-username/myportfolio.git
+git clone https://github.com/ismailgito/myportfolio.git
 cd myportfolio
-```
-
-2. **Install dependencies:**
-```bash
 npm install
 ```
 
-3. **Set up environment variables:**
-Ensure you have a `.env.local` file in the root directory. You will likely need variables for your Nodemailer configuration:
+### 2. Environment Variables Setup
+
+Create a `.env.local` file in the root of the project and specify your Web3Forms access key:
+
 ```env
-# Example .env.local
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_app_specific_password
+# URL Configuration
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=http://localhost:5000
+
+# Contact Form API Key (Web3Forms)
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your-web3forms-access-key-here
+
+# Analytics (Optional)
+# NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
-4. **Start the development server:**
+> [!NOTE]
+> You can obtain a free access key from [Web3Forms](https://web3forms.com/) to start receiving contact form submissions directly in your email inbox.
+
+### 3. Run the Development Server
+
+Start the local server with the following command:
+
 ```bash
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-## 🚀 Deployment
+---
 
-The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new).
-1. Push your local code to a GitHub repository.
-2. Import the project into Vercel.
-3. Set your environment variables in the Vercel project settings.
-4. Deploy!
+## 📦 Deployment & Build
+
+To compile a production-ready optimized build:
+
+```bash
+npm run build
+```
+
+To run the production build locally:
+
+```bash
+npm run start
+```
+
+### Deploying to Vercel
+
+The easiest way to deploy this Next.js app is through the [Vercel Platform](https://vercel.com/new):
+
+1. Commit and push your codebase to GitHub/GitLab/Bitbucket.
+2. Link your repository inside your Vercel Dashboard.
+3. Configure the environment variable `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` in Vercel settings.
+4. Click **Deploy**.
+
+---
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and licensed under the [MIT License](LICENSE).

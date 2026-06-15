@@ -8,6 +8,7 @@ import AboutMe from "@/components/AboutMe";
 import Certificates from "@/components/Certificates";
 import Skills from "@/components/Skills";
 import Internships from "@/components/Internships";
+import MarketingCasestudies from "@/components/MarketingCasestudies";
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
       {/* PROJECTS SECTION */}
       <Projects />
 
+      {/* MARKETING CASE STUDIES SECTION */}
+      <MarketingCasestudies />
+      
       {/*INTERNSHIPS SECTION */}
       <Internships />
 
