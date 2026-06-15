@@ -78,35 +78,7 @@ export default function Hero() {
               A data-driven acquisition marketer optimizing paid campaigns across Google, Meta, and LinkedIn.
               I focus on the metrics that actually impact the bottom line: pipeline volume, conversion value, and ROAS scaling.
             </p>
-
-            {/* Quick Stats — Yellow numbers on black pills */}
-            <div className="grid grid-cols-3 gap-4 border border-[#333333] bg-surface p-5 max-w-lg">
-              <div className="text-center">
-                <p className="text-3xl md:text-4xl font-headline font-bold text-accent">
-                  <AnimatedCounter value={35} suffix="%" />
-                </p>
-                <p className="text-[9px] font-headline font-bold uppercase text-muted mt-1.5 tracking-wider">
-                  ROAS Increase
-                </p>
-              </div>
-              <div className="text-center border-x border-[#333333]">
-                <p className="text-3xl md:text-4xl font-headline font-bold text-accent">
-                  <AnimatedCounter value={26} suffix="%" />
-                </p>
-                <p className="text-[9px] font-headline font-bold uppercase text-muted mt-1.5 tracking-wider">
-                  CPA Reduction
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl md:text-4xl font-headline font-bold text-accent">
-                  <AnimatedCounter value={32} suffix="%" />
-                </p>
-                <p className="text-[9px] font-headline font-bold uppercase text-muted mt-1.5 tracking-wider">
-                  CRO Boost
-                </p>
-              </div>
-            </div>
-
+            
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
               <Button

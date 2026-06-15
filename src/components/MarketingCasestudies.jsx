@@ -22,7 +22,7 @@ const caseStudies = [
     title: "Performance Marketing Assignment",
     subtitle: "Growth Metrics & Optimization",
     notionUrl: "https://docs.google.com/document/d/1xFl8I5Da6PL234Mar-r4hnt_YyZFkXnN2DH530hKJCQ/edit?tab=t.0",
-    results: ["35% ROAS increase", "A/B testing framework", "Automated dashboards", "Budget allocation shifts"],
+    results: ["Underperforming campaigns identified", "A/B testing framework", "Automated dashboards", "Budget allocation shifts"],
     highlights: [
       { icon: FaChartBar, text: "Increased ROAS by 35% across paid social and search channels." },
       { icon: FaRocket, text: "Implemented A/B testing framework for iterative copy/creative optimization." },
