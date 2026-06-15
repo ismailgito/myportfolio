@@ -1,43 +1,48 @@
-// PORTFOLIO/myportfolio/src/app/page.js
+// src/app/page.js
 
 import Hero from "@/components/Hero";
+import AboutMe from "@/components/AboutMe";
+import Skills from "@/components/Skills";
+import MarketingCasestudies from "@/components/MarketingCasestudies";
+import Projects from "@/components/Projects";
+import Internships from "@/components/Internships";
+import Certificates from "@/components/Certificates";
+import Testimonials from "@/components/Testimonials";
 import Resume from "@/components/Resume";
 import ContactForm from "@/components/ContactForm";
-import Projects from "@/components/Projects";
-import AboutMe from "@/components/AboutMe";
-import Certificates from "@/components/Certificates";
-import Skills from "@/components/Skills";
-import Internships from "@/components/Internships";
-import MarketingCasestudies from "@/components/MarketingCasestudies";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 pb-20">
-      {/* HERO SECTION */}
+    <div className="flex flex-col gap-24 pb-24 bg-bg text-apptext relative">
+
+      {/* 1. HERO */}
       <Hero />
 
-      {/*ABOUT SECTION */}
-      <AboutMe />
+      {/* 2. CASE STUDIES */}
+      <MarketingCasestudies />
 
-      {/* SKILLS SECTION */}
+      {/* 3. SERVICES (Toolkit) */}
       <Skills />
 
-      {/* CERTIFICATES SECTION */}
-      <Certificates />
-
-      {/* PROJECTS SECTION */}
+      {/* 4. PROJECTS */}
       <Projects />
 
-      {/* MARKETING CASE STUDIES SECTION */}
-      <MarketingCasestudies />
-      
-      {/*INTERNSHIPS SECTION */}
+      {/* 5. EXPERIENCE */}
       <Internships />
 
-      {/* RESUME SECTION */}
+      {/* 6. CREDENTIALS */}
+      <Certificates />
+
+      {/* 7. ABOUT */}
+      <AboutMe />
+
+      {/* 8. TESTIMONIALS */}
+      <Testimonials />
+
+      {/* 9. RESUME CTA */}
       <Resume />
 
-      {/* CONTACT SECTION */}
+      {/* 10. CONTACT CTA */}
       <ContactForm />
     </div>
   );

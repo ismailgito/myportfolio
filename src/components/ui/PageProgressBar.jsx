@@ -1,4 +1,4 @@
-// PORTFOLIO/myportfolio/src/components/ui/PageProgressBar.jsx
+// src/components/ui/PageProgressBar.jsx
 
 "use client";
 
@@ -27,8 +27,8 @@ export default function PageProgressBar() {
         height: "3px",
         width: `${progress}%`,
         zIndex: 9999,
-        background: "linear-gradient(90deg, #6C63FF, #00D9FF, #FF6584)",
-        transition: "width 0.2s ease",
+        backgroundColor: "#E8FF00",
+        transition: "width 0.1s ease",
       }}
     />
   );
